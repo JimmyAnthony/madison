@@ -1,0 +1,455 @@
+
+@import 'nib'
+
+gris_claro = #818181
+gris_fondo = #3d4044
+gris_oscuro = #333333
+green_status = #16a765
+blue_status = #12aadf
+red_fondo = #E43131
+
+.databox_list 
+    background #f9f9f9
+    font-size 13px
+    color #333
+    border-bottom 1px solid #e3e3e3
+    padding 5px
+
+.databox_list_pointer 
+    background #fff
+    font-size 13px
+    color #333
+    border 1px solid #e3e3e3
+    padding 8px 15px 15px 15px
+    margin 8px 10px 8px 10px
+    position relative
+    border-radius 0.25em
+    box-shadow 1px 2px 2px 0px rgba(0,0,0,0.25)
+    border-left 5px solid #e3e3e3
+
+.databox_list_pointer.x-item-selected
+    //background  #E8E8E8
+    border-bottom 2px solid red_fondo
+    border-left 5px solid red_fondo
+
+.x-view-item-focused
+    outline: 1px dashed #ccc !important
+    outline-offset -1px
+    border-bottom 2px solid red_fondo
+    border-left 5px solid red_fondo
+
+.databox_list_pointer:hover 
+    background none repeat scroll 0 0 #eceff5
+    cursor pointer  
+
+.databox_list:hover 
+    background none repeat scroll 0 0 #eceff5
+
+.databox_bar
+    padding-bottom 4px
+
+.databox_title,
+.databox_title_reg
+    font-family Arial, Helvetica, sans-serif
+    font-weight bold
+    margin-left 25px
+    span
+        display inline-block
+        padding 2px
+
+.databox_title
+    font-size 11px 
+
+.databox_title_reg
+    font-size 15px 
+
+.databox_date
+    font-family Arial, Helvetica, sans-serif
+    font-size 10px 
+    color #708090
+    font-weight bold
+    margin-left 25px
+    span
+        display inline-block
+        padding-left 18px
+        padding-bottom 4px
+    .dbx_user
+        color #708092
+        padding-left 2px
+    .dbx_fecha
+        background-image url('/images/icon/cal-icon.png')
+        background-size 13px 13px
+        background-repeat no-repeat
+        margin-left 6px
+    .dbx_hora
+        background-image url('/images/icon/clock-icon.png')
+        background-size 13px 13px
+        background-repeat no-repeat
+        margin-left 6px
+        
+
+.databox_mensage
+    display inline-block
+
+.databox_img_user
+    width 30px
+    height 30px
+    margin-top 0px
+    display inline-block
+    position absolute
+    top 12px
+    left 10px
+    background-image url('/images/icon/default_user.png')
+    background-size 26px 26px
+    background-repeat no-repeat
+
+.databox_tools
+    width 30px
+    height 100%
+    margin-top 0px
+    background  #e3e3e3
+    display inline-block
+    position absolute
+    top 0px
+    right 0px
+    border-top-right-radius 0.25em 0.25em
+    border-bottom-right-radius 0.25em 0.25em
+    border-bottom 1px solid #e3e3e3
+    border-top 1px solid #e3e3e3
+    border-right 1px solid #e3e3e3
+    border-left 2px solid #DCDCDC
+    padding 2px 4px 2px 4px
+    a
+        display inline-block
+        padding 10px 10px 10px 10px
+    .dbx_dwl
+        background-image url('/images/icon/novedad_visto.png')
+        background-repeat no-repeat 
+    .dbx_dwl_
+        background-image url('/images/icon/download_.png')
+        background-repeat no-repeat
+    .dbx_dwl__
+        background-image url('/images/icon/recicle_nov.ico')
+        background-repeat no-repeat
+    .dbx_dwl_user
+        background-image url('/images/icon/key_nov.png')
+        background-repeat no-repeat 
+    .dbx_dwl_more_user
+        background-image url('/images/icon/global_nov.png')
+        background-repeat no-repeat 
+
+.databox_message
+    font-family Arial, Helvetica, sans-serif
+    font-size 10px
+    margin-left 28px
+    margin-right 32px
+
+.databox_nodedad_ll,
+.databox_nodedad_mv,
+.databox_nodedad_va
+    font-family 'Varela Round', sans-serif
+    font-size 15px
+    font-weight bold
+    width 36px
+    height 35px
+    margin-top 0px
+    display inline-block
+    position absolute
+    top 0px
+    left 0px
+    padding 8px 5px 5px 8px
+
+.databox_nodedad_ll
+    background  red_fondo
+    color #fff
+
+.databox_nodedad_mv
+    background  #696969
+    color #FFFFFF
+
+.databox_nodedad_va
+    background  #59789C
+    color #fff
+
+.databox_btools
+    font-family 'Varela Round', sans-serif
+    font-size 9px
+    hr
+        border 0px
+        border-bottom 1px solid #D3D3D3;
+    span
+        display inline-block
+        padding-left 5px
+    p
+        display inline-block
+        color #59789C
+        margin 0px
+        padding-right 2px
+
+.databox_panel,
+.databox_panel_fill
+    background #fff
+    font-size 13px
+    color #333
+    padding 8px 15px 15px 15px
+    margin 5px 5px 5px 5px
+    position relative
+    box-shadow 1px 2px 2px 0px rgba(0,0,0,0.25)
+
+.databox_panel
+    border 1px solid #e3e3e3
+    border-radius 0.25em
+    border-left 5px solid #e3e3e3
+
+.databox_panel_fill
+    border 0px solid #e3e3e3
+    border-bottom 2px solid #696969
+    border-left 5px solid #696969
+
+.databox_panel_nov_reg
+    background #fff
+    font-size 13px
+    color #333
+    padding 8px 15px 15px 15px
+    margin 0px 0px 0px 0px
+    position relative
+    box-shadow 1px 2px 2px 0px rgba(0,0,0,0.25)
+    border 0px solid #e3e3e3
+    border-top 3px solid #696969
+    border-bottom 3px solid #696969
+    border-left 3px solid #696969
+    border-right 3px solid #696969
+
+.databox_panel_nov_reg_cierre
+    background #fff
+    font-size 13px
+    color #333
+    padding 8px 15px 15px 15px
+    margin 0px 0px 0px 0px
+    position relative
+    box-shadow 1px 2px 2px 0px rgba(0,0,0,0.25)
+    border 0px solid #e3e3e3
+    border 3px solid #F08080
+
+.databox_nodedad_panel,
+.databox_nodedad_hst,
+.databox_nodedad_cierre
+    font-family 'Varela Round', sans-serif
+    font-size 15px
+    font-weight bold
+    width 38px
+    height 35px
+    background  #696969
+    margin-top 0px
+    display inline-block
+    position absolute
+    top 0px
+    left 0px
+    color #fff
+    padding 8px 5px 5px 8px
+
+.databox_nodedad_panel
+    width 38px
+    height 35px
+    background  #696969
+
+.databox_nodedad_hst
+    width 36px
+    height 35px
+    background  #B0C4DE
+
+.databox_nodedad_cierre
+    width 38px
+    height 35px
+    background  #F08080
+    
+
+.databox_clear_data,
+.databox_none_doc,
+.databox_none_data
+    width 35px
+    height 35px
+    margin-top 0px
+    display inline-block
+    position absolute
+    top 12px
+    left 10px
+    //background-size 35px 35px
+    background-repeat no-repeat
+
+.databox_clear_data
+    background-image url('/images/icon/cloud-error-48.png')
+
+.databox_none_doc
+    background-image url('/images/icon/file_Doc.png')
+
+.databox_none_data
+    background-image url('/images/icon/message_attention.png')
+
+.databox_title_clear_data,
+.databox_title_none_data
+    font-family Arial, Helvetica, sans-serif
+    font-size 11px 
+    font-weight bold
+    margin-bottom 5px
+    span
+        display inline-block
+        padding 2px
+
+.databox_title_clear_data
+    margin-top 17px
+    margin-left 37px
+
+.databox_title_none_data
+    margin-left 37px
+    margin-top 10px
+
+.databox_nodedad_titulo_hst,
+.databox_menu_novedad_titulo
+    background  #708092
+    color #fff
+    font-family 'Varela Round', sans-serif
+    width 100%
+    font-size 13px
+    font-weight bold
+    padding 8px 15px 15px 15px
+    margin 8px 10px 8px 10px
+
+.databox_menu_novedad_titulo
+    height 34px
+    clear bold
+    display inline-block
+    .databox_ttl
+        display inline-block
+    .databox_menu_novedad,
+    .databox_add_novedad
+        display inline-block
+        a:hover
+            display inline-block
+            //background-color #f0f0f0
+            background linear-gradient(#f0f0f0, #fff) repeat scroll 0 0 rgba(0, 0, 0, 0)
+            /*background-image linear-gradient(#fff, #f0f0f0)
+            background-image linear-gradient(#fff, #f0f0f0)*/
+            box-shadow 0 1px 2px 0 rgba(0, 0, 0, 0.22) inset
+            //border-color #A9A9A9
+            box-shadow 0 1px 7px 0 rgba(0, 0, 0, 0.5) inset
+            text-shadow 0 1px rgba(0, 0, 0, 0.6)
+        a:active
+            display inline-block
+            background-image linear-gradient(#bb1618, #f0f0f0)
+            box-shadow 0 1px 2px 0 rgba(0, 0, 0, 0.22) inset
+            border 1px solid #f0f0f0
+            background linear-gradient(#fff, #f0f0f0) repeat scroll 0 0 rgba(0, 0, 0, 0)
+        a
+            border-radius 3px
+            background linear-gradient(#fff, #f0f0f0) repeat scroll 0 0 rgba(0, 0, 0, 0)
+            border 1px solid #ccc
+            color #5f5f5f
+            cursor pointer
+            font-weight bold
+            padding 8px 14px 7px
+            text-shadow 0 1px #fff
+            white-space nowrap
+            width 35px
+            height 30px
+            margin-top 0px        
+            display inline-block
+            position absolute
+            top 2px
+            margin-right 3px
+            em
+                height 16px
+                width 16px
+                display inline-block
+                position relative
+                vertical-align middle
+                left -5px
+                top 0px
+.databox_menu_novedad
+    a
+        right 0px
+        em
+            background url("/images/icon/webapp-desktop.png") no-repeat scroll -366px -550px rgba(0, 0, 0, 0)
+    
+.databox_add_novedad
+    a
+        right 37px
+        em
+            background url("/images/icon/webapp-desktop.png") no-repeat scroll -160px -570px rgba(0, 0, 0, 0)
+
+
+.databox_status_on,
+.databox_status_off,
+.databox_cerrado
+    width 43px
+    height 15px
+    display inline-block
+    position absolute
+    top 0px
+    right 5px
+    text-align center
+    //border-radius 0.25em
+    //border-bottom 1px solid #e3e3e3
+    font-size 9px
+    color #fff
+    padding-top 2px
+
+.databox_status_on
+    background green_status
+
+.databox_status_off
+    background-color rgba(0, 0, 0, 0)
+    -webkit-transition background-color 2s
+    -moz-transition background-color 2s
+    transition background-color 2s
+
+.databox_cerrado
+    background #F08080
+
+.databox_status_msn_on,
+.databox_status_msn_off
+    width 40px
+    height 15px
+    display inline-block
+    position absolute
+    top 5px
+    right 38px
+    border-radius 0.25em
+    //border-bottom 1px solid #e3e3e3
+    font-size 10px
+    color #fff
+    padding 2px 0px 1px 5px 
+
+.databox_status_msn_on
+    background #B0C4DE
+
+.databox_status_msn_off
+    background-color rgba(0, 0, 0, 0)
+    -webkit-transition background-color 4s
+    -moz-transition background-color 4s
+    transition background-color 4s
+
+.box-display-reg-on
+    display block
+
+.box-display-reg-off
+    display none
+
+.databox_btools_reg
+    font-family 'Varela Round', sans-serif
+    font-size 9px
+    hr
+        border 0px
+        border-bottom 1px solid #D3D3D3;
+    span
+        display inline-block
+        padding-left 5px
+        padding-bottom 5px
+    div
+        padding-left 0px
+        padding-bottom 2px
+    p
+        display inline-block
+        color #708092
+        margin 0px
+        padding-right 2px 

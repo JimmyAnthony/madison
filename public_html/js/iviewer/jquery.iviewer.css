@@ -1,0 +1,64 @@
+.iviewer_common {
+    background-color: white !important;
+    position:absolute;
+    bottom:10px;
+    border: 1px  solid gray;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+    z-index: 5000;
+}
+
+.iviewer_cursor {
+    cursor: url(img/hand.cur) 6 8, pointer;
+}
+
+.iviewer_drag_cursor {
+    cursor: url(img/grab.cur) 6 8, pointer;
+}
+
+.iviewer_button {
+    width: 28px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.iviewer_zoom_in {
+    left: 32px;
+    background: url(img/1354636739_magnifier_zoom_in.png) no-repeat;
+}
+
+.iviewer_zoom_out {
+    left: 64px;
+    background: url(img/1354636757_magnifier_zoom_out.png) no-repeat;
+}
+
+.iviewer_zoom_zero {
+    left: 96px;
+    background: url(img/1354639923_gtk-zoom-100.png) no-repeat;
+}
+
+.iviewer_zoom_fit {
+    left: 128px;
+    background: url(img/1354640149_zoom_extend.png) no-repeat;
+}
+
+.iviewer_zoom_status {
+    left: 160px;
+    font: 1em/28px Sans;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    width: 60px;
+}
+
+.iviewer_rotate_left {
+    left: 227px;
+    background: #fff url(img/iviewer.rotate_left.png) center center no-repeat;
+}
+
+.iviewer_rotate_right {
+    left: 262px;
+    background: #fff url(img/iviewer.rotate_right.png) center center no-repeat;
+}

@@ -1,0 +1,568 @@
+@import 'nib'
+
+/**
+ * Geekode php (http://geekode.net/)
+ * @link    https://github.com/remicioluis/geekcode_php
+ * @author  Luis Remicio @remicioluis (https://twitter.com/remicioluis)
+ * @version 2.0
+ */
+
+.red_bg
+    background-image linear-gradient(to bottom, #000 0%, #000 100%)
+    .x-column-header-over
+        background-image linear-gradient(to bottom, #000 0%, #000 100%)
+
+.x-column-header
+    background-image linear-gradient(to bottom, #181718 0%, #000000 100%)
+    .x-column-header-over
+        background-image linear-gradient(to bottom, #181718 0%, #000000 100%)
+
+.x-column-header-inner-empty
+    background transparent
+
+.x-column-header-inner
+    color white
+
+.column_header_double 
+    > div
+        text-align center !important
+        > span
+            margin-right 0 !important
+            white-space normal !important
+
+.x-grid-row-summary > td.x-grid-cell
+    background-image linear-gradient(to bottom, #BFBEBD 0%, #B5B4B1 100%) !important
+    border-right 1px solid #6E6E6E !important
+    color black !important
+
+/**
+ * Estilos personalizados utilizados con extjs
+ */
+
+.gk-column-icon
+    font-size 0
+    margin 0
+    padding 0
+    position relative
+    vertical-align middle
+    img
+        &.link
+            cursor pointer
+            display inline-block
+            margin 2px 1px
+            vertical-align middle
+        &.disable_link
+            cursor default
+            -moz-filter grayscale(100%)
+            -ms-filter grayscale(100%)
+            -o-filter grayscale(100%)
+            -webkit-filter grayscale(100%)
+            filter gray
+            filter grayscale(100%)
+            filter url('/images/icon/svg/grayscale.svg#greyscale')
+            opacity: 0.5
+
+    a
+        &.link
+            display block
+            font-size 12px
+            vertical-align middle
+            padding 3px 6px 4px 6px
+        &.disable_link
+            color black
+            cursor default
+            text-decoration none
+
+.lr-div-table
+    background-color #D1D1D1
+    .lr-table
+        border-spacing 1px
+        border-collapse separate
+        width 100%
+    .lr-table-head
+        background-image linear-gradient(to bottom, #121112 0%, #1C1C1C 100%) !important
+    .lr-table-tr
+        &:nth-child(even)
+            background-color #EDEDED
+        &:nth-child(odd)
+            background-color white
+        &:hover
+            background-color #D9D9D9
+    .lr-table-td
+        height 16px
+        margin 0
+        normal 11px/13px tahoma,arial,verdana,sans-serif
+        padding 3px 6px 3px 6px
+        position relative
+    .lr-table-td-head
+        color white
+
+.gk-window
+    outline none
+    overflow hidden
+
+    &-default
+        background-color #e8e8e8
+        border-color #a9a9a9
+        border-radius 5px 5px 0 0
+        border-style solid
+        border-width 0px
+        box-shadow 7px 7px 4px #888888
+        padding 0
+
+        &-mc
+            background-color #e8e8e8
+
+        &:before
+            display none
+            content "x-slicer:frame:5px 5px 5px 5px, corners:url(/images/extjs/window/window-default-corners.gif), sides:url(/images/extjs/window/window-default-sides.gif)" !important
+
+    &-header
+        
+        > div
+            > div
+              > div.x-tool
+
+                    > img.x-tool-img
+                        background-image none
+
+                        &:before
+                            color white
+                            content "\e604"
+                            font-family 'weburbano'
+                            font-size 22px
+
+        &-default
+            background-color #991919
+            border-color #a9a9a9
+            font-size 11px
+
+            &-top
+                background-color #991919
+                border-bottom-left-radius 0
+                border-bottom-right-radius 0
+                border-style solid
+                border-top-left-radius 5px
+                border-top-right-radius 5px
+                border-width 1px 1px 0 1px
+                padding 5px 5px 1px 5px
+
+        &-title
+            &-default
+                color white
+                font-family tahoma, arial, verdana, sans-serif
+                font-size 11px
+                font-weight bold
+                line-height 15px
+
+                & > .x-title-text-default
+                    padding 0 2px 1px
+                    text-transform none
+
+                    &:after
+                        color white
+                        content "\e604"
+                        font-family 'weburbano'
+                        font-size 22px
+                        position absolute
+                        right -18px
+                        top 0
+
+    &-body
+        position relative
+        overflow hidden
+
+        &-default
+            background #e0e0e0
+            border-color #bcb1b0
+            border-style solid
+            border-width 1px
+            color black
+            font-family tahoma, arial, verdana, sans-serif
+            font-size 12px
+            font-weight normal
+
+        &-plain
+            background-color transparent
+
+.gk-toolbar
+    &-footer
+        background-color #333
+        background-image none
+        border-color #bcb0b0
+        border-style solid
+        border-width 0
+        padding 4px 0 4px 6px
+
+        > div
+            > div
+                > a.x-toolbar-item
+                    margin 0 6px 0 0
+
+.x-fieldset-default
+    border-radius 0 !important
+                    
+.gk-toolbar-menu
+    background transparent !important
+    > div.x-box-inner
+        background-image none !important
+        > div.x-box-target
+            background-image none !important
+            > div.x-toolbar
+                background-image none !important
+                background transparent !important
+                
+.gk-tree-indicador
+    background-image none !important
+    
+.gk-tree-color-col-default
+    background-color white
+    color black
+
+.gk-tree-color-col-level1
+    background-color black
+    color white
+    
+    > td.x-grid-item-focused
+        color white
+        // font-weight bold
+    
+.gk-tree-color-col-level2
+    background-color #878783
+    color white
+    
+    > td.x-grid-item-focused
+        color white
+        // font-weight bold
+
+.gk-tree-color-col-level3
+    background-color #A8A8A8
+    color black
+    
+    > td.x-grid-item-focused
+        color black
+        // font-weight bold
+
+.gk-tree-color-col-level4
+    background-color #D1D1CD
+    color black
+    
+    > td.x-grid-item-focused
+        color black
+        // font-weight bold
+
+.gk-tree-color-col-level5
+    background-color #E5E6E1
+    color black
+    
+    > td.x-grid-item-focused
+        color black
+        // font-weight bold
+    
+.gk-panel
+    background-color white
+    border-left 2px solid #696969
+
+    header
+        background-color #696969
+        box-sizing border-box
+        display flex
+        height 45px
+        position relative
+        
+        .cC
+            position absolute
+            right 0
+            top 0
+            width 24px
+            height 24px
+            margin 2px
+            
+            span
+                color white
+                font-size 24px
+                cursor pointer
+                
+                &:hover
+                    opacity .8
+        
+        .cH
+            box-sizing border-box
+            display flex
+            margin auto 0
+            width 100%
+            
+            .logo
+                height 34px
+                margin-left 5px
+                width 34px
+                
+                span
+                    color white
+                    font-size 32px
+                
+            .cT
+                color white
+                font-family 'Open Sans', sans-serif
+                height 34px
+                
+                span
+                    display block
+                
+                .title
+                    font-size 14px
+                    font-weight bold
+                    margin-left 5px
+                    
+                .sub-title
+                    font-size 9px
+                    margin-left 5px
+                    
+    section
+        margin 5px 10px
+        
+.ue-uppercase
+    text-transform uppercase
+
+.ue-lowercase
+    text-transform lowercase
+    
+.gk-panel-box
+    background-color white
+    border 2px solid #991919
+    
+    header
+        background-color #991919
+        box-sizing border-box
+        display flex
+        height 30px
+        position relative
+        
+        .cH
+            box-sizing border-box
+            display flex
+            margin auto 0
+            width 100%
+            
+            .logo
+                display flex
+                height 30px
+                margin-left 5px
+                width 30px
+                
+                span
+                    color white
+                    display flex
+                    font-size 24px
+                    margin auto 0
+                
+            .cT
+                color white
+                display flex
+                font-family 'Open Sans', sans-serif
+                height 30px
+                
+                span
+                    display flex
+                    margin auto 0
+                
+                .title
+                    font-size 14px
+                    font-weight bold
+                    margin-left 5px
+                    
+    section
+        padding 5px
+        position relative
+
+        div
+            display inline-block
+            vertical-align top
+
+        p
+            color #4b4b4b
+            font-size 14px
+            margin 5px
+
+            span
+                font-family 'Open Sans', sans-serif
+                font-size 11px
+                vertical-align middle
+                white-space pre-wrap
+
+            label
+                color black
+                display inline-block
+                font-family 'Open Sans', sans-serif
+                font-weight bold
+                vertical-align middle
+
+.gk-panel-box-componet
+    background-color white
+    border 2px solid #991919
+    
+    header
+        background-color #991919
+        box-sizing border-box
+        display flex
+        height 30px
+        position relative
+        
+        .cH
+            box-sizing border-box
+            display flex
+            margin auto 0
+            width 100%
+            
+            .logo
+                display flex
+                height 30px
+                margin-left 5px
+                width 30px
+                
+                span
+                    color white
+                    display flex
+                    font-size 24px
+                    margin auto 0
+                
+            .cT
+                color white
+                display flex
+                font-family 'Open Sans', sans-serif
+                height 30px
+                
+                span
+                    display flex
+                    margin auto 0
+                
+                .title
+                    font-size 14px
+                    font-weight bold
+                    margin-left 5px
+                    
+    section
+        padding 5px
+        position relative
+
+        div
+            //display inline-block
+            vertical-align top
+        p
+            color #4b4b4b
+            font-size 11px
+            margin 5px
+
+            span
+                font-family 'Open Sans', sans-serif
+                font-size 13px
+                vertical-align middle
+                white-space pre-wrap
+                //display inline-block
+
+            label
+                color black
+                display inline-block
+                font-family 'Open Sans', sans-serif
+                font-weight bold
+                vertical-align middle                
+                
+.itemSelectIndicador .x-grid-cell
+    background-color yellow !important
+    color black !important
+    // font-weight bold !important
+        
+.gk-maps-logistica
+    height 100%
+    width 100%
+    
+    .maps-canvas
+        height 100%
+        width 100%
+        
+    .panel-form
+        position absolute
+        top: 5px
+        left: 50%
+        margin-left -180px
+        z-index 5
+        background-color #fff
+        padding 5px
+        border 1px solid #999
+        
+.gk-icon-grid
+    display block
+    font-size 0
+    text-align center
+    
+    span
+        cursor pointer
+        display inline-block
+        font-size 16px
+        margin-bottom 1px
+        margin-right 4px
+        margin-top 1px
+        vertical-align middle
+    
+.gk-icon-barra
+    background-image url('/images/icon/bar-3.png')
+    height 16px
+    width 16px
+    
+.gk-icon-pie-1
+    background-image url('/images/icon/pie-1.png')
+    height 16px
+    width 16px
+    
+.gk-icon-pie-2
+    background-image url('/images/icon/pie.png')
+    height 16px
+    width 16px
+    
+.gk-icon-pie-3
+    background-image url('/images/icon/pie-3.png')
+    height 16px
+    width 16px
+    
+.gk-icon-pie-4
+    background-image url('/images/icon/pie-4.png')
+    height 16px
+    width 16px
+    
+#popup_jquery
+    background-color #fff
+    border-radius 10px 10px 10px 10px
+    box-shadow 0 0 25px 5px #999
+    color #111
+    display none
+    min-width 450px
+    padding 25px
+    
+    span.button
+        background-color #2b91af
+        // border-radius 10px
+        // box-shadow 0 2px 3px rgba(0,0,0,0.3)
+        color #fff
+        cursor pointer
+        display inline-block
+        padding 10px 20px
+        text-align center
+        text-decoration none
+        
+        &.b-close
+            // border-radius 7px 7px 7px 7px
+            // box-shadow none
+            font bold 131% sans-serif
+            padding 0 6px 2px
+            position absolute
+            right 0px
+            top 0px
+            
+.gk-panel-op-indicadores
+    // border 1px solid gray
+    width 100%
+    height 30px
+    
+    span
+        font-family 'Open Sans', sans-serif
+        font-size 14px

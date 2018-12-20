@@ -1,0 +1,9 @@
+.ue-panelS{background-color:#fff;border:2px solid #696969;margin:2px 2px 2px 2px;-webkit-box-shadow:2px 2px 2px 0 rgba(0,0,0,0.25);box-shadow:2px 2px 2px 0 rgba(0,0,0,0.25);padding-bottom:2px;}
+.ue-panelS .separator{border-bottom:1px solid #d3d3d3;margin:2px 5px 5px}
+.ue-panelS header{padding:2px;position:relative;}
+.ue-panelS header .logo{background-color:#696969;height:36px;left:0;position:absolute;text-align:center;top:0;width:36px;}
+.ue-panelS header .logo span{color:#fff;display:block;font-size:15px;font-weight:bold;margin-top:25%}
+.ue-panelS header .title{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;margin-left:42px;margin-top:8px}
+.ue-panelS header .legend{font-size:11px;margin-left:42px}
+.ue-panelS section .item{margin:1px 5px}
+.ue-uppercase{text-transform:uppercase}

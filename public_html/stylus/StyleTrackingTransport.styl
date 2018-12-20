@@ -1,0 +1,869 @@
+@import 'nib'
+
+white_fondo = #fff
+gris_claro = #818181
+gris_fondo = #3d4044
+gris_oscuro = #333333
+green_status = #16a765
+blue_status = #12aadf
+red_fondo = #E43131
+
+.contetDivTransportLeft
+  position fixed
+  left 15px
+  top 115px
+  z-index 11
+  div 
+    opacity 0.8
+    margin-top 5px
+    //padding 5px
+    font-size 20px
+    
+.contetDivTransport
+  position fixed
+  right 15px
+  top 115px
+  z-index 11
+  div 
+    opacity 0.8
+    margin-top 5px
+    //padding 5px
+    font-size 20px
+    
+.DivTrackFullScreen,
+.DivTrackReload,
+.DivTrackTrafic
+  //background blue_griss
+  height 40px
+  width  50px
+  
+#contetDivDriver
+  color #fff
+  font-size 10px
+  font-family sans-serif
+  margin-top 10px
+  margin-left -19px
+  font-weight bolder
+  
+.databox_none_data_transport
+    width 70px
+    height 35px
+    margin-top 0px
+    display inline-block
+    position absolute
+    top 12px
+    left 10px
+    //background-size 35px 35px
+    background-repeat no-repeat
+.databox_none_data_transport
+    background-image url('/images/icon/transport_urbano.png')
+    
+.databox_title_clear_data_transport,
+.databox_none_data_transport
+    font-family Arial, Helvetica, sans-serif
+    font-size 11px 
+    font-weight bold
+    margin-bottom 5px
+    span
+        display inline-block
+        padding 2px
+
+.databox_title_clear_data_transport
+    margin-top 17px
+    margin-left 57px
+    
+.databox_list_transport_none
+  background #fff
+  font-size 13px
+  color #333
+  border-bottom 1px solid #e3e3e3
+  padding 5px
+  border-radius 0.25em
+
+.databox_list_transport_select
+    background white_fondo !important
+    margin 4px 4px 8px 4px
+    border-radius 0.25em
+    box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.25)
+
+.databox_list_transport 
+    background #fff
+    font-size 13px
+    color #333
+    border-bottom 1px solid #e3e3e3
+    padding 5px
+    border-radius 0.25em
+    height 105px
+
+.databox_list_pointer 
+    background #fff
+    font-size 13px
+    color #333
+    border 1px solid #e3e3e3
+    padding 8px 15px 15px 15px
+    margin 8px 10px 8px 10px
+    position relative
+    border-radius 0.25em
+    box-shadow 1px 2px 2px 0px rgba(0,0,0,0.25)
+    border-left 5px solid #e3e3e3
+
+.databox_list_pointer.x-item-selected
+    //background  #E8E8E8
+    border-bottom 2px solid #6B6B77
+    border-left 5px solid #6B6B77
+
+.x-view-item-focused
+    outline: 0px dashed #ccc !important
+    outline-offset -1px
+    border-bottom 2px solid #6B6B77
+    border-left 5px solid #6B6B77
+
+.databox_list_pointer:hover 
+  background none repeat scroll 0 0 #eceff5
+  cursor pointer  
+
+.databox_list_transport:hover 
+  background none repeat scroll 0 0 #eceff5
+  
+.databox_transport_title_second:hover 
+  background none repeat scroll 0 0 #eceff5
+    
+.databox_resume_transport
+  float left
+	height 105px
+	width 250px
+	border-right 1px solid #BDBCBC
+	
+.databox_time_transport
+  overflow hidden
+	height 105px
+  width 100% 
+  margin-left 2px
+ 
+.styleTimeLine
+  margin 3px 
+	
+.box_img
+	//display inline-block
+	float left
+	width 30px
+	height 30px
+	margin 2px
+
+.box_dat
+   float left
+   width 65px
+   height 38px
+   margin 2px
+
+.databox_placa_transport,
+    font-family Arial, Helvetica, sans-serif
+    font-weight bold
+    margin-left 1px
+    //display inline-block
+    float left
+    span
+        display inline-block
+        padding 2px
+        color black
+
+.databox_placa_transport
+    font-size 11px 
+    
+.databox_user_transport
+    font-family Arial, Helvetica, sans-serif
+    height 12px
+    font-size 10px 
+    color #708090
+    font-weight bold
+    span
+        display inline-block
+        padding-left 18px
+        padding-bottom 4px
+    .dbx_user
+        color #708092
+        padding-left 2px
+
+.box_space
+	height 10px
+
+.databox_aling_r
+	float left
+		
+.databox_resum_content
+	float left
+	width 130px
+	height 100%
+	
+.databox_pie_chart_stl
+	float left
+	width 110px
+  padding-left 15px 
+	
+.databox_cell,
+    font-family Arial, Helvetica, sans-serif
+    font-weight bold
+    margin-left 4px
+    margin-top -1px
+    //display inline-block
+    float left
+    span
+        display inline-block
+        font-size 9px
+        color dimgrey
+
+.databox_summary
+  clear both
+  
+.countTransport
+  font-size 17px
+  margin 10px 0px 0px 4px
+  font-weight bolder
+  float left
+  width 25px
+  border-right 1px solid #BDBCBC
+  text-align center
+  
+.color_summary_blue
+  color #337ab7
+
+.color_summary_green
+  color #16a765
+  
+.color_summary_gris
+  color #B5B5B5
+  
+.color_summary_red
+  color #FA5858
+  
+.color_summary_au
+  color #000000
+
+.databox_summary_txt
+  clear both
+   
+.summary_txt
+  font-size 7px
+  margin -4px 0px 0px 4px
+  font-weight bolder
+  float left
+  width 25px
+  text-align center
+  
+
+.databox_summary_pie
+  float left
+  width 28px
+  
+.databox_summary_pie_bt
+  clear both
+  
+.countTransport_pie
+  font-size 8px
+  margin 2px 0px 0px -1px
+  font-weight bolder
+  float left
+  width 25px
+  border-bottom 1px solid #BDBCBC
+  text-align center
+
+
+.countTransport_pie_bt
+  font-size 8px
+  margin 2px 0px 0px -1px
+  font-weight bolder
+  float left
+  width 36px
+  border-right 1px solid #BDBCBC
+  text-align center
+
+/*BATTERY*/
+
+.databox_battery_transport
+	width 20px
+	height 25px
+	float left
+	font-size 0.335em
+  margin-top 12px
+  font-size 5px
+	
+
+.battery_box
+	width 10px
+  font-size 5px 
+	
+.battery_text
+	font-size 8px
+	margin-left 5px
+
+.battery_none,
+.battery_0,
+.battery_1,
+.battery_2,
+.battery_3,
+.battery_4,
+.battery_5,
+.battery_6,
+.battery_7,
+.battery_8
+	height 3.8em
+	width 2.2em
+	background-color transparent
+	box-sizing border-box
+	border .3em #000 solid
+	float left
+	display block
+	margin-left 1.4em
+ 
+.battery_none::before,
+.battery_0::before,
+.battery_1::before,
+.battery_2::before,
+.battery_3::before,
+.battery_4::before,
+.battery_5::before,
+.battery_6::before,
+.battery_7::before,
+.battery_8::before
+  	content ""
+  	height .4em
+  	width 1em
+  	background-color #000
+  	position absolute
+  	margin-top -.7em
+  	margin-left .3em
+
+.battery_none::before,
+.battery_0::after,
+.battery_1::after,
+.battery_2::after,
+.battery_3::after,
+.battery_4::after,
+.battery_5::after,
+.battery_6::after,
+.battery_7::after,
+.battery_8::after 
+  	content ""
+  	background-color #000
+  	width 1.2em
+  	position absolute
+  	margin-left .2em
+
+.battery_none::after 
+  	height 2.8em
+  	margin-top .2em
+  	background linear-gradient(113deg, rgb(235, 106, 66) 0%, rgb(235, 106, 66) 46%, rgb(85, 85, 87) 46%, rgb(85, 85, 87) 54%, rgb(235, 106, 66) 54%, rgb(235, 106, 66) 100%)
+
+.battery_0::after
+    height 0em
+    margin-top 0em
+    
+.battery_1::after
+  	height .3em
+  	margin-top 2.7em
+  	background-color rgb(235, 106, 66)
+
+.battery_2::after 
+  	height .6em
+  	margin-top 2.4em
+
+.battery_3::after
+  	height 1em
+  	margin-top 2em
+
+.battery_4::after
+  	height 1.6em
+  	margin-top 1.4em
+
+.battery_5::after
+  	height 1.9em
+  	margin-top 1.1em
+
+.battery_6::after
+  	height 2.5em
+  	margin-top 0.5em
+
+.battery_7::after
+  	height 2.8em
+  	margin-top 0.2em
+  	
+.battery_8::after 
+    height 2.8em
+    margin-top .2em
+    background linear-gradient(113deg, rgb(62, 146, 6) 0%, rgb(62, 146, 6) 46%, rgb(62, 146, 6) 46%, rgb(62, 146, 6) 54%, rgb(62, 146, 6) 54%, rgb(62, 146, 6) 100%)
+
+.battery:first-child  
+	margin-left 0 
+	
+
+/*PROGRESS*/
+.databox_progress
+	clear both
+	height 10px
+	width 121px
+	
+#progress
+  	height 13px
+  	margin-bottom: 11px
+  	overflow hidden
+  	background-color #C7C7C7
+  	border-radius 4px
+  	-webkit-box-shadow inset 0 1px 2px rgba(0,0,0,.1)
+  	box-shadow inset 0 1px 2px rgba(0,0,0,.1)
+    
+#progress-bar 
+  	float left
+  	width 0
+  	height 100%
+  	font-size 9px
+  	line-height 14px
+  	color #fff
+  	text-align center
+  	background-color #337ab7
+  	-webkit-box-shadow inset 0 -1px 0 rgba(0,0,0,.15)
+  	box-shadow inset 0 -1px 0 rgba(0,0,0,.15)
+  	-webkit-transition width .6s ease
+  	-o-transition width .6s ease
+  	transition width .6s ease
+    font-weight bold 
+    
+.StyleActive,
+.StyleLock
+  font-family 'Varela Round', sans-serif
+  font-size 9px
+  font-weight bold
+  //width 40px
+  //height 15px
+  margin-top -5px
+  float left
+  position absolute
+  padding 2px 2px 2px 2px
+  //background  #BBBBBB
+  color #fff
+  
+.StyleActive
+  right 25px
+
+.StyleLock
+  right 10px
+
+.StyleInactive
+  display none
+
+/*PIE CHARTS*/
+.arc 
+	path 
+	  	stroke #FFF
+	  	stroke-width 2px
+
+
+.d3-label 
+  	fill #525264
+  	font-family "Helvetica"
+  	font-size 8.5px
+
+/*API RESUME*/
+
+.databox_api_resumen
+	height 100%
+	width 100%
+  clear both 
+	/*
+.x-column-header
+    background-image linear-gradient(to bottom, #DB0707 0%, #D60729 100%)
+    .x-column-header-over
+        background-image linear-gradient(to bottom, #DB0707 0%, #D60729 100%)*/
+        
+.column_header_transport
+	background-image linear-gradient(to bottom, #525264 0%, #3D3D4B 100%)
+	background-image linear-gradient(to bottom, #525264 0%, #3D3D4B 100%)
+    > div
+        text-align center !important
+        > span
+            margin-right 0 !important
+            white-space normal !important
+            
+.databox_panel_transpot
+	.databox_panel_A
+		float left
+		width 50%
+		border 1px solid #e3e3e3
+		border-radius 0.25em
+    	box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.35)
+			
+	.databox_panel_B
+		float left
+		width 50%
+		border 1px solid #e3e3e3
+		border-radius 0.25em
+    	box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.35)
+    	
+	.databox_panel_C
+		clear both
+		border 1px solid #FFF
+    	box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.35)
+    	
+    .databox_panel_D
+		clear both
+		border 1px solid #FFF
+    	box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.35)
+		
+.color_td
+	background-color #000
+	color #fff
+	font-size 9px
+	font-weight bold
+
+.color_td_b
+	color #000
+	font-size 9px
+	
+.height_table
+	width 100%
+	height 100%
+	tr
+		td 
+			border: 1px solid black;
+			border 1px solid #FFF
+    	box-shadow 1px 2px 2px 0.5px rgba(0,0,0,0.35)
+			padding 1px
+			
+
+/*VIEW*/
+.dataview-multisort-item 
+    float left
+    padding 8px
+    margin 8px
+
+.x-rtl .dataview-multisort-item 
+    float right
+
+.dataview-multisort-item 
+	h3 
+    font-size 12px
+    font-weight normal
+    text-align center
+    padding-top 5px
+    margin 0
+     
+.databox_transport_title_first
+  background-image linear-gradient(to bottom, #000 0%, #000 100%)
+  background-image linear-gradient(to bottom, #000 0%, #000 100%)
+  font-family Arial, Helvetica, sans-serif
+  color #fff
+  //font-weight bold
+  padding 8px 1px 2px 8px
+  //margin 0px 10px 0px 10px
+  //margin-top 4px
+  font-size 11px 
+  border-bottom 1px solid #DBDBDB
+  span
+      display inline-block
+      padding 2px 
+
+.databox_transport_title_second
+  font-family Arial, Helvetica, sans-serif
+  color #3D3D4B
+  //font-weight bold
+  padding 8px 1px 2px 8px
+  //margin 0px 10px 0px 10px
+  //margin-top 4px
+  font-size 11px 
+  border-bottom 1px solid #DBDBDB
+  span
+      display inline-block
+      padding 2px 
+      
+.databox_transport_title_second.x-item-selected
+    //background  #E8E8E8
+    border-bottom 2px solid #CD7054
+    border-left 5px solid #F08080
+    
+.databox_transport_title_second:hover 
+    background none repeat scroll 0 0 #eceff5
+    cursor pointer
+    
+.ue-map-canvas
+  width 100%
+  height 100%
+  
+/*TIME LINE GOOGLE*/ 
+#mytimeline
+
+#new 
+  position absolute
+  left 25px
+  top 8px
+  text-transform uppercase
+  color white
+  font-weight bold
+  font-size 40px
+  text-decoration none
+
+
+/* Custom styles for the Timeline */
+  
+div.timeline-frame 
+  //border-color #5D99C3
+  border 0px
+  border-radius 0px
+  -moz-border-radius 0px /* For Firefox 3.6 and older */
+
+div.timeline-axis
+  //border-color #5D99C3
+
+  //background-color #5D99C3
+  //filter progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D99C3', endColorstr='#3A6DA0') /* for IE */
+  //background -webkit-gradient(linear, left top, left bottom, from(#5D99C3), to(#3A6DA0)) /* for webkit browsers */
+  //background -moz-linear-gradient(top,  #5D99C3,  #3A6DA0) /* for firefox 3.6+ */
+
+div.timeline-axis-grid 
+
+div.timeline-groups-axis 
+  border-color #5D99C3 
+
+div.timeline-axis-text 
+  color white
+
+div.timeline-groups-text 
+  color #4D4D4D
+  visibility hidden
+
+.timeline-axis-text-major
+  visibility hidden 
+
+div.timeline-event 
+  color white
+  border-radius 5px
+
+div.timeline-event-content 
+  padding 0px
+
+
+div.unavailable 
+  background-color #F03030 /* red */
+  border-color #bd2828     /* red */
+
+div.available 
+  background-color #1AA11A /* green */
+  border-color #136e13     /* green */
+
+div.maybe 
+  background-color #FFA500 /* orange */
+  border-color #cc8100   /* orange */
+  
+div.timeline-currenttime 
+  -moz-box-sizing border-box
+  background-color #ff7f6e
+  box-sizing border-box
+  width 2px
+
+/*TIMELINE CSS*/
+/*
+.timeline-wrap 
+  position relative
+  width 100%
+  height 3px
+  background #333
+  
+.timeline-event 
+  position absolute
+  left 0
+  top 0
+
+.timeline-event-node 
+  position absolute
+  top -3px
+  left 0px
+  border-radius 8px
+  width 9px
+  height 9px
+  background #222
+  cursor pointer
+  -webkit-transition width 0.05s ease-out, height 0.05s ease-out, margin 0.05s ease-out, background 0.05s ease-out
+  -moz-transition width 0.05s ease-out, height 0.05s ease-out, margin 0.05s ease-out, background 0.05s ease-out
+  transition width 0.05s ease-out, height 0.05s ease-out, margin 0.05s ease-out, background 0.05s ease-out
+
+.timeline-event-contents 
+  display none
+  margin-left -20px
+
+.timeline-event.timeline-selected .timeline-event-node, .timeline-event.timeline-selected .timeline-event-node:hover 
+  width 14px
+  height 14px 
+  margin-left -3px
+  margin-top -3px
+  background #222
+
+.timeline-event-node:hover 
+  width 11px
+  height 11px
+  margin-left -1px
+  margin-top -1px
+
+.timeline-event-contents 
+  overflow-x visible !important
+  overflow-y visible !important
+  position absolute
+  padding 12px
+  left 0
+  top 30px
+  background #222
+  font normal 12px/18px 'Lucida Grande', helvetica, tahoma, sans-serif
+  color #efefef
+
+.timeline-event.timeline-bottom .timeline-event-arrow 
+  position absolute
+  display none
+  content ""
+  left 0px
+  top 24px
+  width 0
+  height 0
+  border-left 6px solid transparent
+  border-right 6px solid transparent
+  border-bottom 6px solid #222
+
+.timeline-event.timeline-above .timeline-event-contents
+  top -80px
+
+.timeline-event.timeline-above .timeline-event-arrow 
+  top auto
+  bottom 32px
+  border-left 6px solid transparent
+  border-right 6px solid transparent
+  border-top 6px solid #222
+  border-bottom none
+
+.timeline-event-contents .timeline-event-content, 
+.timeline-event-contents .timeline-event-link 
+  display none
+
+/*.timeline-event.timeline-selected .timeline-event-content, .timeline-event.timeline-selected .timeline-event-link {
+  display: block;
+}*//*
+.timeline-event-title 
+  white-space nowrap
+  font-weight bold
+
+.timeline-event-title span 
+  color #777
+  display inline-block
+  margin-right 10px
+  font-size 10px
+  font-weight normal
+
+.timeline-event-link  
+  display block
+  text-align right
+
+.timeline-event-link a 
+  color #777
+  text-decoration none
+  font-size 10px
+  
+.timeline-event-link a:visited 
+  color #777
+  text-decoration none 
+
+.timeline-event-link a:hover 
+  color #777
+  text-decoration underline
+
+.timeline-large-scale,  
+.timeline-small-scale 
+  position: absolute
+  left 0
+  top -30px
+  font bold 10px/18px 'Lucida Grande', helvetica, tahoma, sans-serif
+  color #222
+
+.timeline-dateblock 
+  width 100px
+  text-align center
+  position absolute
+  left 0
+  top 0
+  margin-left -50px
+  white-space nowrap
+
+.timeline-dateblock:before 
+  display block
+  content ""
+  position absolute
+  left 50px
+  top 20px
+  width 1px
+  height 10px
+  background #222
+
+.timeline-small-scale .timeline-dateblock:before 
+  top 25px
+  height 4px
+  background #777
+
+.timeline-small-scale 
+  color #dfdfdf
+  top -30px
+  
+.timeline-event-content 
+  img  
+    float left
+    margin 0 10px 10px 0 
+    width 100px
+    
+.timeline-event-content  
+  margin 20px 0 10px*/
+  
+
+/*LOADING*/
+    
+.spinner
+  position absolute
+  left 50%
+  top 50%
+  margin-left -30px
+  margin-top -30px
+  z-index 19010
+
+.cube1, 
+.cube2 
+  background-color #333
+  width 15px
+  height 15px
+  position absolute
+  top 0
+  left 0
+  -webkit-animation sk-cubemove 1.8s infinite ease-in-out
+  animation sk-cubemove 1.8s infinite ease-in-out
+
+.cube2 
+  -webkit-animation-delay -0.9s
+  animation-delay -0.9s
+  
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}

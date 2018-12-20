@@ -1,0 +1,243 @@
+@import 'nib'
+
+@font-face
+  font-family 'Glyphicons Halflings'
+  src url('/js/bootstrap/fonts/glyphicons-halflings-regular.eot')
+  src url('/js/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/js/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/js/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/js/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
+
+.glyphicon
+    display inline-block
+    font-family 'Glyphicons Halflings'
+    font-style normal
+    font-weight normal
+    line-height 1
+    position relative
+    top 1px
+        
+.glyphicon-chevron-left:before
+  content "\e079"
+
+.glyphicon-chevron-right:before
+  content "\e080"
+
+.carousel
+    position relative
+    // border 1px solid gray
+
+.carousel-inner
+    background-color white
+    margin 0 50px
+    overflow hidden
+    position relative
+
+    > .item
+        display none
+        position relative
+        transition 0.6s ease-in-out left
+
+        > img, > a > img
+            display block
+            height auto
+            line-height 1
+            max-width 100%
+            width 100% \9
+
+        .files
+            font-size 0
+            height 132px
+            text-align center !important
+            width 100%
+
+            .contenedor_file
+                background-image linear-gradient(to bottom, #F7F7F7 0%, #CCCCCC 100%)
+                border-radius 5px
+                box-shadow 5px 5px 5px 0px rgba(0,0,0,0.75)
+                cursor pointer
+                display inline-block
+                height 115px
+                margin 5px 5px 5px 5px
+                text-align center
+                text-decoration none
+                vertical-align top
+                width 120px
+
+                &:hover, &:focus
+                    color #fff
+                    opacity 0.95
+                    outline 0
+                    text-decoration none
+
+                .icon
+                    height 64px
+                    margin 2px 0
+
+                    img
+                        margin 0
+
+                .opciones
+                    background-color #333
+                    height 50px
+
+                    .caption
+                        color white
+                        font-size 11px
+
+                        span
+                            // border 1px solid white
+                            display block
+                            overflow hidden
+                            text-overflow ellipsis
+                            white-space nowrap
+
+                    .btn
+                        height 20px
+                        text-align center
+
+                        span
+                            cursor pointer
+                            display inline-block
+                            font-size 0
+                            height 16px
+                            margin 2px 2px
+                            width 16px
+
+                            img
+                                display block
+
+
+
+    > .active, > .next, > .prev
+        display block
+
+    > .active
+       left 0
+
+    > .next, > .prev
+        position absolute
+        top 0
+        width 100%
+
+    > .next
+        left 100%
+
+    > .prev
+        left -100%
+
+    > .next.left, > .prev.right
+        left 0
+
+    > .active.left
+        left -100%
+
+    > .active.right
+        left 100%
+
+.carousel-control
+    bottom 0
+    color #ffffff
+    font-size 20px
+    left 0
+    opacity 0.7
+    position absolute
+    text-align center
+    text-shadow 0 1px 2px rgba(0, 0, 0, 0.6)
+    top 0
+    width 50px
+
+    &.left
+        background-image linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(119, 133, 145, 0.0001) 100%)
+        background-repeat repeat-x
+
+    &.right
+        background-image linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
+        background-repeat repeat-x
+        left auto
+        right 0
+
+    &:hover, &:focus
+        color #ffffff
+        opacity 0.9
+        outline 0
+        text-decoration none
+
+    .icon-prev, .icon-next, .glyphicon-chevron-left, .glyphicon-chevron-right
+        display inline-block
+        position absolute
+        top 50%
+        z-index 5
+
+    .icon-prev, .glyphicon-chevron-left
+        left 50%
+        margin-left -10px
+
+    .icon-next, .glyphicon-chevron-right
+        margin-right -10px
+        right 50%
+
+    .icon-prev, .icon-next
+        font-family serif
+        height 20px
+        margin-top -10px
+        width 20px
+    
+    .icon-prev:before
+        content '\2039'
+
+    .icon-next:before
+        content '\203a'
+
+.carousel-indicators
+    bottom -28px
+    left 50%
+    list-style none
+    margin-left -30%
+    padding-left 0
+    position absolute
+    text-align center
+    width 60%
+    z-index 15
+
+    li
+        background-color #fff \9
+        background-color rgba(0, 0, 0, 0)
+        border 1px solid gray
+        border-radius 10px
+        cursor pointer
+        display inline-block
+        height 10px
+        margin 1px
+        text-indent -999px
+        width 10px
+
+    .active
+        background-color white
+        height 11px
+        margin 0
+        width 11px
+
+.carousel-caption
+    bottom 20px
+    color #ffffff
+    left 15%
+    padding-bottom 20px
+    padding-top 20px
+    position absolute
+    right 15%
+    text-align center
+    text-shadow 0 1px 2px rgba(0, 0, 0, 0.6)
+    z-index 10
+
+    .btn
+        text-shadow none
+
+.ue-carousel-gestor
+    background-image linear-gradient(to bottom, #D5D6D2 0%, #A1A19F 52%)
+    margin 2px
+    width 100%
+    height 100%
+
+.justificar
+    text-align justify
+
+.separation
+    border-left 1px dashed gray

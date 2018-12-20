@@ -1,0 +1,34 @@
+input[type="password"],input[type="text"]{border:1px solid #ccc;-webkit-border-radius:2px;border-radius:2px;-webkit-box-shadow:inset 0 1px 3px #ddd;box-shadow:inset 0 1px 3px #ddd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:.2em .3em}
+input[type="password"]:focus,input[type="text"]:focus{border-color:#129fea;outline:0;outline:thin dotted 9}
+body{background-color:#3d4044;font-family:'Varela Round',sans-serif;font-size:16px}
+.contenedor_header{background-color:#d8d8d8;-webkit-box-shadow:0 0 5px 0 #808080;box-shadow:0 0 5px 0 #808080;font-size:1em;left:0;min-width:600px;position:fixed;top:0;width:100%;z-index:1000;}
+.contenedor_header .Header{font-size:0;height:60px;margin:0 auto;width:900px;}
+.contenedor_header .Header .logo{background:url("../images/front/logo_urbano.png") no-repeat;display:inline-block;height:45px;margin:5px 0 0 5px;width:145px}
+.contenido{background-color:#fff;height:auto;margin:60px auto 0 auto;padding:1em;position:relative;text-align:center;width:900px;}
+.contenido .title{color:#333;font-size:1.7em}
+.contenido .ingrese{color:#818181;font-size:.9em}
+.contenido .label{color:#333;display:inline-block;font-size:1em;text-align:left;width:170px}
+.contenido .input{display:inline-block;font-size:1em;width:30%}
+.contenido .captcha{display:inline-block}
+.contenido .button{background-color:#333;border:none;-webkit-border-radius:2px;border-radius:2px;color:#fff;display:inline-block;margin:0 auto;padding:.3em;text-align:center;}
+.contenido .button:hover{background-color:#818181}
+.contenido .pass_meter{border:1px solid #808080;display:inline-block;height:16px;position:relative;}
+.contenido .pass_meter #scorebarBorder{height:16px;width:100px}
+.contenido .pass_meter #score{color:#000;font-size:85%;left:0;position:absolute;text-align:center;top:0;width:100px;z-index:10}
+.contenido .pass_meter #scorebar{background-image:url("/js/passwordmeter/images/bg_strength_gradient.jpg");background-position:0 0;background-repeat:no-repeat;left:0;position:absolute;top:0;width:100px;z-index:0}
+.Footer{background-color:#333;-webkit-border-radius:0 0 2px 2px;border-radius:0 0 2px 2px;height:38px;margin:0 auto;padding:0 1em;position:relative;width:900px;}
+.Footer .creditos{padding-top:3px;}
+.Footer .creditos p{margin:0 !important;text-align:center;}
+.Footer .creditos p span{color:#818181;display:block;font-family:'Varela Round',sans-serif;font-size:.7em}
+.Footer .sello_izq{background:url("/images/front/sello_footer.png") no-repeat;height:24px;left:2px;position:absolute;top:2px;width:96px}
+.Footer .sello_der{background:url("/images/front/sello_footer.png") no-repeat;height:24px;position:absolute;right:2px;top:2px;width:96px}
+.centrado{text-align:center}
+.error-msg{background-image:-webkit-linear-gradient(top, #f50a0a 0%, #ff573d 50%);background-image:-moz-linear-gradient(top, #f50a0a 0%, #ff573d 50%);background-image:-o-linear-gradient(top, #f50a0a 0%, #ff573d 50%);background-image:-ms-linear-gradient(top, #f50a0a 0%, #ff573d 50%);background-image:linear-gradient(to bottom, #f50a0a 0%, #ff573d 50%);cursor:pointer;height:30px;left:0;position:absolute;text-align:left;top:0;width:100%;}
+.error-msg .texto-error{color:#fff;display:inline-block;font-size:1em;margin:4px 10px;vertical-align:top}
+.error-msg .info-icon{color:#fff;display:inline-block;font-size:1.2em;margin-left:8px;margin-top:4px;vertical-align:top}
+.hide{display:none}
+@media only screen and (max-width:1000px){.contenido{padding:0 0 10px 0;width:auto;}
+.contenido .input{width:45%}
+.Footer{padding:0;width:auto;}
+.Footer .creditos{padding:0}
+}

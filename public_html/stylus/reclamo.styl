@@ -1,0 +1,80 @@
+
+@import 'nib'
+
+.cont_descargar
+    width 750px
+    height 105px
+
+    fieldset
+        border 1px solid #b5b8c8
+        margin 2px
+        padding 2px
+
+        legend
+            font-family 'Varela Round', sans-serif
+            font-size 10px
+            color #333
+
+        .row
+
+            div
+                display inline-block
+                margin 1px
+
+                label
+                    display inline-block
+                    font-family 'Varela Round', sans-serif
+                    font-size 10px
+                    vertical-align top
+
+                span
+                    background-color #F5F5F5
+                    border-radius 3px
+                    display inline-block
+                    font-family 'Varela Round', sans-serif
+                    font-size 10px
+                    font-weight bold
+                    overflow hidden
+                    padding 1px
+                    text-overflow ellipsis
+                    text-transform uppercase
+                    vertical-align top
+                    white-space nowrap
+
+.texto_right
+    text-align right
+
+.texto_left
+    text-align left
+
+.gk-div-circle-status
+    font-size 0
+
+    span
+        display inline-block
+        width 16px
+        height 16px
+        margin 0 1px
+        padding 0
+        vertical-align top
+
+.circle-red
+    &:before
+        content "\f111"
+        font-family 'weburbano'
+        font-size 16px
+        color red
+
+.circle-green
+    &:before
+        content "\f111"
+        font-family 'weburbano'
+        font-size 16px
+        color green
+
+.circle-yellow
+    &:before
+        content "\f111"
+        font-family 'weburbano'
+        font-size 16px
+        color #FAE339

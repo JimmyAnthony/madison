@@ -1,0 +1,211 @@
+
+/**
+ * Geekode php (http://geekode.net/)
+ * @link    https://github.com/remicioluis/geekcode_php
+ * @author  Luis Remicio @remicioluis (https://twitter.com/remicioluis)
+ * @version 2.0
+ */
+
+@import 'nib'
+
+gris_claro = #818181
+gris_fondo = #3d4044
+gris_oscuro = #333333
+
+input[type="password"],
+input[type="text"]
+    border 1px solid #ccc
+    border-radius 2px
+    box-shadow inset 0 1px 3px #ddd
+    box-sizing border-box
+    padding 0.2em 0.3em
+
+input[type="password"]:focus,
+input[type="text"]:focus
+    border-color #129FEA
+    outline 0
+    outline thin dotted \9
+
+body
+    background-color gris_fondo
+    font-family 'Varela Round', sans-serif
+    font-size 16px
+
+.contenedor_header
+    background-color rgba(216, 216, 216, 1)
+    box-shadow 0 0 5px 0 gray
+    font-size 1em
+    left 0
+    min-width 600px
+    position fixed
+    top 0
+    width 100%
+    z-index 1000
+
+    .Header
+        font-size 0
+        height 60px
+        margin 0 auto
+        width 900px
+
+        .logo
+            background url('../images/front/logo_urbano.png') no-repeat
+            display inline-block
+            height 45px
+            margin 5px 0 0 5px
+            width 145px
+
+.contenido
+    background-color white
+    height auto
+    margin 60px auto 0 auto
+    padding 1em
+    position relative
+    text-align center
+    width 900px
+
+    .title
+        color gris_oscuro
+        font-size 1.7em
+
+    .ingrese
+        color gris_claro
+        font-size .9em
+
+    .label
+        color gris_oscuro
+        display inline-block
+        font-size 1em
+        text-align left
+        width 170px
+
+    .input
+        display inline-block
+        font-size 1em
+        width 30%
+
+    .captcha
+        display inline-block
+
+    .button
+        background-color gris_oscuro
+        border none
+        border-radius 2px
+        color white
+        display inline-block
+        margin 0 auto
+        padding .3em
+        text-align center
+
+        &:hover
+            background-color gris_claro
+    
+    .pass_meter
+        border 1px solid gray
+        display inline-block
+        height 16px
+        position relative
+
+        #scorebarBorder
+            height 16px
+            width 100px
+
+        #score
+            color #000
+            font-size 85%
+            left 0
+            position absolute
+            text-align center
+            top 0
+            width 100px
+            z-index 10
+
+        #scorebar
+            background-image url('/js/passwordmeter/images/bg_strength_gradient.jpg')
+            background-position 0 0
+            background-repeat no-repeat
+            left 0
+            position absolute
+            top 0
+            width 100px
+            z-index 0
+        
+.Footer
+    background-color gris_oscuro
+    border-radius 0 0 2px 2px
+    height 38px
+    margin 0 auto
+    padding 0 1em
+    position relative
+    width 900px
+    .creditos
+        padding-top 3px
+        p
+            margin 0 !important
+            text-align center
+
+            span
+                color gris_claro
+                display block
+                font-family 'Varela Round', sans-serif
+                font-size .7em
+    .sello_izq
+        background url('/images/front/sello_footer.png') no-repeat
+        height 24px
+        left 2px
+        position absolute
+        top 2px
+        width 96px
+
+    .sello_der
+        background url('/images/front/sello_footer.png') no-repeat
+        height 24px
+        position absolute
+        right 2px
+        top 2px
+        width 96px
+
+.centrado
+    text-align center
+
+.error-msg
+    background-image linear-gradient(to bottom, #F50A0A 0%, #FF573D 50%)
+    cursor pointer
+    height 30px
+    left 0
+    position absolute
+    text-align left
+    top 0
+    width 100%
+    .texto-error
+        color white
+        display inline-block
+        font-size 1em
+        margin 4px 10px
+        vertical-align top
+    .info-icon
+        color white
+        display inline-block
+        font-size 1.2em
+        margin-left 8px
+        margin-top 4px
+        vertical-align top
+
+.hide
+    display none
+
+@media only screen and (max-width:1000px)
+
+    .contenido
+        padding 0 0 10px 0
+        width auto
+
+        .input
+            width 45%
+
+    .Footer
+        padding 0
+        width auto
+
+        .creditos
+            padding 0

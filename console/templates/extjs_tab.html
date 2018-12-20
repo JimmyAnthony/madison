@@ -1,0 +1,57 @@
+<script type="text/javascript">
+var tab = Ext.getCmp(inicio.id+'-{contenedor}');
+if(!Ext.getCmp('{name_template}-tab')){
+    var {name_template} = {
+        id: '{name_template}',
+        url: '',
+        init:function(){
+
+            var store = Ext.create('Ext.data.Store',{
+                fields: [
+                    {name: '', type: 'string'}
+                ],
+                proxy:{
+                    type: 'ajax',
+                    url: {name_template}.url+'/',
+                    reader:{
+                        type: 'json',
+                        rootProperty: 'data'
+                    }
+                },
+                listeners:{
+                    load: function(obj, records, successful, opts){
+                        
+                    }
+                }
+            });
+
+            var panel = Ext.create('Ext.form.Panel',{
+                id: {name_template}.id+'-form',
+                border:false
+            });
+
+            tab.add({
+                title: '{name_template}',
+                id: {name_template}.id+'-tab',
+                border: false,
+                autoScroll: true,
+                closable: true,
+                layout:{
+                    type: 'fit'
+                },
+                items:[
+                    panel
+                ],
+                listeners:{
+                    afterrender: function(obj, e){
+                        tab.setActiveTab(obj);
+                    }
+                }
+            }).show();
+        }
+    }
+    Ext.onReady({name_template}.init, {name_template});
+}else{
+    tab.setActiveTab({name_template}.id+'-tab');
+}
+</script>

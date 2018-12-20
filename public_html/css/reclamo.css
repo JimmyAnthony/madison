@@ -1,0 +1,13 @@
+.cont_descargar{width:750px;height:105px;}
+.cont_descargar fieldset{border:1px solid #b5b8c8;margin:2px;padding:2px;}
+.cont_descargar fieldset legend{font-family:'Varela Round',sans-serif;font-size:10px;color:#333}
+.cont_descargar fieldset .row div{display:inline-block;margin:1px;}
+.cont_descargar fieldset .row div label{display:inline-block;font-family:'Varela Round',sans-serif;font-size:10px;vertical-align:top}
+.cont_descargar fieldset .row div span{background-color:#f5f5f5;-webkit-border-radius:3px;border-radius:3px;display:inline-block;font-family:'Varela Round',sans-serif;font-size:10px;font-weight:bold;overflow:hidden;padding:1px;-o-text-overflow:ellipsis;text-overflow:ellipsis;text-transform:uppercase;vertical-align:top;white-space:nowrap}
+.texto_right{text-align:right}
+.texto_left{text-align:left}
+.gk-div-circle-status{font-size:0;}
+.gk-div-circle-status span{display:inline-block;width:16px;height:16px;margin:0 1px;padding:0;vertical-align:top}
+.circle-red:before{content:"\f111";font-family:'weburbano';font-size:16px;color:#f00}
+.circle-green:before{content:"\f111";font-family:'weburbano';font-size:16px;color:#008000}
+.circle-yellow:before{content:"\f111";font-family:'weburbano';font-size:16px;color:#fae339}

@@ -1,0 +1,11 @@
+{
+  "vars": {},
+  "css": [
+    "glyphicons.less",
+    "carousel.less"
+  ],
+  "js": [
+    "carousel.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=cd09fd7f3cc0d50c8fc2"
+}
